@@ -1,0 +1,8 @@
+# Copyright (c) 2024 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+board:
+  name: ms50sfa_nrf52832
+  vendor: nordic
+  socs:
+    - name: nrf52832
