@@ -22,6 +22,20 @@
 		SLP-gpios = <&gpio0 17 0>;
 		BTDATA-gpios = <&gpio0 18 0>;
 	};
+
+	// Dummy values to be able to activate serial recovery
+	buttons {
+		compatible = "gpio-keys";
+		button0: button_0 {
+			label = "Push button switch 0";
+			gpios = <&gpio0 13 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			zephyr,code = <INPUT_KEY_0>;
+		};
+	};
+
+	aliases {
+		mcuboot-button0 = &button0;
+	};
 };
 
 &flash0 {

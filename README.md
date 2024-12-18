@@ -7,13 +7,13 @@ $ mkdir ~/nrf/
 2. Clone the repository :
 ```
 $ cd ~/nrf/
-$ git clone https://github.com/antoinejulien/Zephyr/
+$ git clone git@gitlab.com:humanware.ca/projects/BNWindows/lowlevel/nrf52/BrailleNoteWindows.git
 ```
 
 3. Setup west environment :
 ```
-$ west init -l Zephyr
-$ cd Zephyr
+$ west init -l BrailleNoteWindows
+$ cd BrailleNoteWindows
 $ west update
 ```
 

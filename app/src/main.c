@@ -10,8 +10,15 @@
 
 int main(void)
 {
-	printk("Address of sample %p\n", (void *)__rom_region_start);
+	printk("Address of ROM : %p\n", (void *)__rom_region_start);
+	printk("Address of image RAM : %p\n", (void *)_image_ram_start);
 	printk("Hello sysbuild with mcuboot 2! %s\n", CONFIG_BOARD);
+
+	while(1){
+		printk("AAAAA this to see change\n");
+		k_sleep(K_SECONDS(1));
+	}
+    
 	return 0;
 }
 
